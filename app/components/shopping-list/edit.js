@@ -2,9 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   actions: {
-    edit () {
-      console.log('editing!');
-      this.sendAction('edit', this.get('list'));
+    save() {
+      console.log('SAVING');
+      this.sendAction('save', this.get('list'));
     },
   },
 });
