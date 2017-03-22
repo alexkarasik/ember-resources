@@ -12,6 +12,11 @@ export default Ember.Component.extend({
     toggleItemDone (item) {
       console.log('GOT TO SHOPPING LIST');
       return this.sendAction('toggleItemDone', item);
+    },
+
+    deleteItem (item) {
+      console.log('ITEM DELETED');
+      return this.sendAction('deleteItem', item);
     }
   },
 });
