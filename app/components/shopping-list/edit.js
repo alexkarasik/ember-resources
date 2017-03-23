@@ -6,5 +6,11 @@ export default Ember.Component.extend({
       console.log('SAVING');
       this.sendAction('save', this.get('list'));
     },
+
+    cancel() {
+      console.log('CANCEL');
+      this.get('list').rollBackAttributes();
+      this.sendAction('cancel');
+    },
   },
 });

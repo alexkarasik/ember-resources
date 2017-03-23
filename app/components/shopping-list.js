@@ -29,8 +29,7 @@ export default Ember.Component.extend({
       data.list = this.get('list');
       this.sendAction('createItem', data);
       this.set('newItem.content', null);
-    }
-
+    },
 
   },
 });
